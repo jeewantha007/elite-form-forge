@@ -4,6 +4,20 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import CoachPage from "./pages/CoachPage";
+import PlansPage from "./pages/PlansPage";
+import GalleryPage from "./pages/GalleryPage";
+import ContactPage from "./pages/ContactPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import MemberDashboard from "./pages/member/MemberDashboard";
+import MemberProfile from "./pages/member/MemberProfile";
+import MemberMembership from "./pages/member/MemberMembership";
+import MemberPayments from "./pages/member/MemberPayments";
+import MemberAttendance from "./pages/member/MemberAttendance";
+import MemberProgress from "./pages/member/MemberProgress";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminMembers from "./pages/admin/AdminMembers";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -16,7 +30,20 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/coach" element={<CoachPage />} />
+          <Route path="/plans" element={<PlansPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/member" element={<MemberDashboard />} />
+          <Route path="/member/profile" element={<MemberProfile />} />
+          <Route path="/member/membership" element={<MemberMembership />} />
+          <Route path="/member/payments" element={<MemberPayments />} />
+          <Route path="/member/attendance" element={<MemberAttendance />} />
+          <Route path="/member/progress" element={<MemberProgress />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/members" element={<AdminMembers />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
