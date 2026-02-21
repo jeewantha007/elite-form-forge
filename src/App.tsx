@@ -18,6 +18,10 @@ import MemberAttendance from "./pages/member/MemberAttendance";
 import MemberProgress from "./pages/member/MemberProgress";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminMembers from "./pages/admin/AdminMembers";
+import AdminPayments from "./pages/admin/AdminPayments";
+import AdminAttendance from "./pages/admin/AdminAttendance";
+import AdminPlans from "./pages/admin/AdminPlans";
+import AdminSettings from "./pages/admin/AdminSettings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +48,10 @@ const App = () => (
           <Route path="/member/progress" element={<MemberProgress />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/members" element={<AdminMembers />} />
+          <Route path="/admin/payments" element={<AdminPayments />} />
+          <Route path="/admin/attendance" element={<AdminAttendance />} />
+          <Route path="/admin/plans" element={<AdminPlans />} />
+          <Route path="/admin/settings" element={<AdminSettings />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
