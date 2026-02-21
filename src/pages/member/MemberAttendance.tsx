@@ -25,33 +25,33 @@ const MemberAttendance = () => (
     <Navbar />
     <DashboardLayout links={memberLinks} title="Member Panel">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl text-primary-foreground">ATTENDANCE</h1>
+        <h1 className="text-3xl text-foreground">ATTENDANCE</h1>
         <div className="flex gap-3">
-          <button className="flex items-center gap-2 bg-status-active text-primary-foreground px-5 py-3 font-heading text-xs tracking-wider hover:opacity-90 transition-opacity">
+          <button className="flex items-center gap-2 bg-status-active text-white px-5 py-3 font-heading text-xs tracking-wider hover:opacity-90 transition-opacity rounded-md">
             <LogIn size={16} /> CHECK IN
           </button>
-          <button className="flex items-center gap-2 bg-gym-dark border border-primary-foreground/10 text-primary-foreground px-5 py-3 font-heading text-xs tracking-wider hover:bg-gym-black transition-colors">
+          <button className="flex items-center gap-2 bg-background border border-border text-foreground px-5 py-3 font-heading text-xs tracking-wider hover:bg-muted transition-colors rounded-md">
             <LogOut size={16} /> CHECK OUT
           </button>
         </div>
       </div>
 
-      <div className="bg-gym-dark border border-primary-foreground/5 overflow-hidden">
+      <div className="bg-background border border-border rounded-lg overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
-              <tr className="border-b border-primary-foreground/10">
-                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-primary-foreground/40">DATE</th>
-                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-primary-foreground/40">CHECK IN</th>
-                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-primary-foreground/40">CHECK OUT</th>
+              <tr className="border-b border-border">
+                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-muted-foreground">DATE</th>
+                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-muted-foreground">CHECK IN</th>
+                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-muted-foreground">CHECK OUT</th>
               </tr>
             </thead>
             <tbody>
               {attendance.map((a, i) => (
-                <tr key={i} className="border-b border-primary-foreground/5 hover:bg-gym-black/30 transition-colors">
-                  <td className="px-6 py-4 text-sm text-primary-foreground/70">{a.date}</td>
+                <tr key={i} className="border-b border-border hover:bg-muted/50 transition-colors">
+                  <td className="px-6 py-4 text-sm text-foreground/70">{a.date}</td>
                   <td className="px-6 py-4 text-sm text-status-active">{a.checkIn}</td>
-                  <td className="px-6 py-4 text-sm text-primary-foreground/50">{a.checkOut}</td>
+                  <td className="px-6 py-4 text-sm text-muted-foreground">{a.checkOut}</td>
                 </tr>
               ))}
             </tbody>

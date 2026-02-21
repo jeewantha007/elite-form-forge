@@ -15,9 +15,9 @@ const Navbar = () => {
   const { pathname } = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gym-black/95 backdrop-blur-md border-b border-primary/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <Link to="/" className="font-heading text-2xl tracking-widest text-primary-foreground">
+        <Link to="/" className="font-heading text-2xl tracking-widest text-foreground">
           ELITE<span className="text-primary">FIT</span>
         </Link>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
               key={l.path}
               to={l.path}
               className={`font-heading text-sm tracking-wider transition-colors hover:text-primary ${
-                pathname === l.path ? "text-primary" : "text-primary-foreground/80"
+                pathname === l.path ? "text-primary" : "text-foreground/70"
               }`}
             >
               {l.label}
@@ -39,42 +39,42 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <Link
             to="/login"
-            className="font-heading text-sm tracking-wider text-primary-foreground/80 hover:text-primary transition-colors"
+            className="font-heading text-sm tracking-wider text-foreground/70 hover:text-primary transition-colors"
           >
             Login
           </Link>
           <Link
             to="/register"
-            className="bg-primary text-primary-foreground px-5 py-2 font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors"
+            className="bg-primary text-primary-foreground px-5 py-2 font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors rounded-md"
           >
             Join Now
           </Link>
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden text-primary-foreground" onClick={() => setOpen(!open)}>
+        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-gym-black border-t border-primary/10 px-4 pb-4">
+        <div className="md:hidden bg-background border-t border-border px-4 pb-4">
           {navLinks.map((l) => (
             <Link
               key={l.path}
               to={l.path}
               onClick={() => setOpen(false)}
               className={`block py-3 font-heading text-sm tracking-wider ${
-                pathname === l.path ? "text-primary" : "text-primary-foreground/80"
+                pathname === l.path ? "text-primary" : "text-foreground/70"
               }`}
             >
               {l.label}
             </Link>
           ))}
-          <div className="flex gap-3 pt-3 border-t border-primary/10">
-            <Link to="/login" onClick={() => setOpen(false)} className="text-primary-foreground/80 font-heading text-sm">Login</Link>
-            <Link to="/register" onClick={() => setOpen(false)} className="bg-primary text-primary-foreground px-5 py-2 font-heading text-sm">Join Now</Link>
+          <div className="flex gap-3 pt-3 border-t border-border">
+            <Link to="/login" onClick={() => setOpen(false)} className="text-foreground/70 font-heading text-sm">Login</Link>
+            <Link to="/register" onClick={() => setOpen(false)} className="bg-primary text-primary-foreground px-5 py-2 font-heading text-sm rounded-md">Join Now</Link>
           </div>
         </div>
       )}
