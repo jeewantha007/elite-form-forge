@@ -26,41 +26,41 @@ const AdminMembers = () => (
     <Navbar />
     <DashboardLayout links={adminLinks} title="Admin Panel">
       <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
-        <h1 className="text-3xl text-primary-foreground">MEMBERS</h1>
+        <h1 className="text-3xl text-foreground">MEMBERS</h1>
         <div className="relative">
-          <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-primary-foreground/30" />
+          <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" />
           <input
             type="text"
             placeholder="Search members..."
-            className="bg-gym-dark border border-primary-foreground/10 pl-11 pr-4 py-3 text-primary-foreground text-sm focus:border-primary focus:outline-none transition-colors w-64"
+            className="bg-background border border-border pl-11 pr-4 py-3 text-foreground text-sm focus:border-primary focus:outline-none transition-colors w-64 rounded-md"
           />
         </div>
       </div>
 
-      <div className="bg-gym-dark border border-primary-foreground/5 overflow-hidden">
+      <div className="bg-background border border-border rounded-lg overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
-              <tr className="border-b border-primary-foreground/10">
-                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-primary-foreground/40">MEMBER</th>
-                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-primary-foreground/40">PLAN</th>
-                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-primary-foreground/40">EXPIRY</th>
-                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-primary-foreground/40">STATUS</th>
+              <tr className="border-b border-border">
+                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-muted-foreground">MEMBER</th>
+                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-muted-foreground">PLAN</th>
+                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-muted-foreground">EXPIRY</th>
+                <th className="text-left px-6 py-4 text-xs font-heading tracking-widest text-muted-foreground">STATUS</th>
               </tr>
             </thead>
             <tbody>
               {members.map((m, i) => (
-                <tr key={i} className="border-b border-primary-foreground/5 hover:bg-gym-black/30 transition-colors cursor-pointer">
+                <tr key={i} className="border-b border-border hover:bg-muted/50 transition-colors cursor-pointer">
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-gym-black flex items-center justify-center text-sm font-heading text-primary">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-sm font-heading text-primary">
                         {m.name[0]}
                       </div>
-                      <span className="text-sm text-primary-foreground/80">{m.name}</span>
+                      <span className="text-sm text-foreground/80">{m.name}</span>
                     </div>
                   </td>
-                  <td className="px-6 py-4 text-sm text-primary-foreground/60">{m.plan}</td>
-                  <td className="px-6 py-4 text-sm text-primary-foreground/60">{m.expiry}</td>
+                  <td className="px-6 py-4 text-sm text-muted-foreground">{m.plan}</td>
+                  <td className="px-6 py-4 text-sm text-muted-foreground">{m.expiry}</td>
                   <td className="px-6 py-4"><StatusBadge status={m.status} /></td>
                 </tr>
               ))}

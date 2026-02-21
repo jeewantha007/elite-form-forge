@@ -22,38 +22,38 @@ const AdminPlans = () => (
     <Navbar />
     <DashboardLayout links={adminLinks} title="Admin Panel">
       <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
-        <h1 className="text-3xl text-primary-foreground">PLANS</h1>
-        <button className="bg-primary text-primary-foreground px-6 py-3 text-sm font-heading tracking-wider hover:bg-primary/90 transition-colors">
+        <h1 className="text-3xl text-foreground">PLANS</h1>
+        <button className="bg-primary text-primary-foreground px-6 py-3 text-sm font-heading tracking-wider hover:bg-primary/90 transition-colors rounded-md">
           + ADD NEW PLAN
         </button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {plans.map((plan) => (
-          <div key={plan.name} className="bg-gym-dark border border-primary-foreground/5 p-6 card-hover group">
+          <div key={plan.name} className="bg-background border border-border rounded-lg p-6 card-hover group">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <h3 className="font-heading text-lg text-primary mb-1">{plan.name}</h3>
-                <div className="text-2xl font-heading text-primary-foreground">{plan.price}</div>
-                <div className="text-xs text-primary-foreground/40 mt-1">{plan.duration}</div>
+                <div className="text-2xl font-heading text-foreground">{plan.price}</div>
+                <div className="text-xs text-muted-foreground mt-1">{plan.duration}</div>
               </div>
               <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                <button className="w-8 h-8 flex items-center justify-center bg-primary-foreground/5 hover:bg-primary-foreground/10 transition-colors rounded">
-                  <Edit size={14} className="text-primary-foreground/60" />
+                <button className="w-8 h-8 flex items-center justify-center bg-muted hover:bg-muted/80 transition-colors rounded">
+                  <Edit size={14} className="text-muted-foreground" />
                 </button>
-                <button className="w-8 h-8 flex items-center justify-center bg-primary-foreground/5 hover:bg-status-overdue/20 transition-colors rounded">
-                  <Trash2 size={14} className="text-primary-foreground/60" />
+                <button className="w-8 h-8 flex items-center justify-center bg-muted hover:bg-status-overdue/20 transition-colors rounded">
+                  <Trash2 size={14} className="text-muted-foreground" />
                 </button>
               </div>
             </div>
 
-            <div className="text-xs font-heading tracking-widest text-primary-foreground/40 mb-3">
+            <div className="text-xs font-heading tracking-widest text-muted-foreground mb-3">
               {plan.members} ACTIVE MEMBERS
             </div>
 
-            <div className="border-t border-primary-foreground/10 pt-4 space-y-2">
+            <div className="border-t border-border pt-4 space-y-2">
               {plan.features.map((f) => (
-                <div key={f} className="flex items-center gap-2 text-sm text-primary-foreground/60">
+                <div key={f} className="flex items-center gap-2 text-sm text-muted-foreground">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                   {f}
                 </div>

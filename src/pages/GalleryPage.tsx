@@ -18,13 +18,13 @@ const GalleryPage = () => {
   const filtered = filter === "All" ? galleryItems : galleryItems.filter((g) => g.category === filter);
 
   return (
-    <div className="bg-gym-black min-h-screen">
+    <div className="bg-muted min-h-screen">
       <Navbar />
       <section className="pt-28 pb-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl text-primary-foreground mb-4">GALLERY</h1>
-            <p className="text-primary-foreground/50">Inside EliteFit — where champions are made.</p>
+            <h1 className="text-5xl md:text-6xl text-foreground mb-4">GALLERY</h1>
+            <p className="text-muted-foreground">Inside EliteFit — where champions are made.</p>
           </div>
 
           <div className="flex justify-center gap-3 mb-12 flex-wrap">
@@ -32,8 +32,8 @@ const GalleryPage = () => {
               <button
                 key={c}
                 onClick={() => setFilter(c)}
-                className={`px-5 py-2 font-heading text-xs tracking-widest transition-colors ${
-                  filter === c ? "bg-primary text-primary-foreground" : "bg-gym-dark text-primary-foreground/60 hover:text-primary-foreground"
+                className={`px-5 py-2 font-heading text-xs tracking-widest transition-colors rounded-full ${
+                  filter === c ? "bg-primary text-primary-foreground" : "bg-background text-foreground/60 hover:text-foreground border border-border"
                 }`}
               >
                 {c}
@@ -49,11 +49,11 @@ const GalleryPage = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className={`mb-4 ${item.aspect} bg-gym-dark border border-primary-foreground/5 cursor-pointer group overflow-hidden relative break-inside-avoid`}
+                className={`mb-4 ${item.aspect} bg-background border border-border cursor-pointer group overflow-hidden relative break-inside-avoid rounded-lg`}
                 onClick={() => setLightbox(item.id)}
               >
                 <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors flex items-center justify-center">
-                  <span className="text-primary-foreground/0 group-hover:text-primary-foreground/80 font-heading text-xs tracking-widest transition-colors">
+                  <span className="text-white/0 group-hover:text-white/80 font-heading text-xs tracking-widest transition-colors">
                     {item.category}
                   </span>
                 </div>
@@ -70,14 +70,14 @@ const GalleryPage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-gym-black/95 flex items-center justify-center p-8"
+            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-8"
             onClick={() => setLightbox(null)}
           >
-            <button className="absolute top-6 right-6 text-primary-foreground/60 hover:text-primary-foreground" onClick={() => setLightbox(null)}>
+            <button className="absolute top-6 right-6 text-white/60 hover:text-white" onClick={() => setLightbox(null)}>
               <X size={24} />
             </button>
-            <div className="w-full max-w-2xl aspect-video bg-gym-dark flex items-center justify-center">
-              <span className="text-primary-foreground/30 font-heading text-sm">Photo {lightbox + 1}</span>
+            <div className="w-full max-w-2xl aspect-video bg-muted flex items-center justify-center rounded-lg">
+              <span className="text-muted-foreground font-heading text-sm">Photo {lightbox + 1}</span>
             </div>
           </motion.div>
         )}
