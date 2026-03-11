@@ -47,7 +47,7 @@ const Navbar = () => {
       <nav className={`w-full transition-all duration-300 ${scrolled ? 'bg-[#111]/95 backdrop-blur-md shadow-lg border-b border-white/5 py-0' : 'bg-[#111]/80 backdrop-blur-sm border-b border-white/5 py-1'}`}>
         <div className="container mx-auto flex items-center justify-between h-20 px-4">
           <Link to="/" className="flex items-center gap-4 group">
-            <div className="bg-white p-1.5 rounded-md drop-shadow-lg group-hover:scale-105 transition-transform">
+            <div className="bg-white p-1.5 rounded-full drop-shadow-lg group-hover:scale-105 transition-transform flex items-center justify-center">
               <img src={logo} alt="NSS Fitness Centre" className="h-12 w-auto" />
             </div>
             <span className="font-heading text-xl tracking-[0.2em] text-white hidden sm:inline uppercase">NSS <span className="text-primary">FITNESS CENTRE</span></span>

@@ -9,7 +9,7 @@ const Footer = () => (
         {/* Brand Info */}
         <div className="space-y-6">
           <Link to="/" className="flex items-center gap-4 group inline-flex mb-2">
-            <div className="bg-white p-1.5 rounded-md group-hover:scale-105 transition-transform">
+            <div className="bg-white p-1.5 rounded-full group-hover:scale-105 transition-transform flex items-center justify-center">
               <img src={logo} alt="NSS Fitness Centre" className="h-12 w-auto" />
             </div>
             <h3 className="text-xl font-heading tracking-widest text-white uppercase">
