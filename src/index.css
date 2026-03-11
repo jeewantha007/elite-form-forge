@@ -32,7 +32,7 @@
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 0 100% 56%;
+    --ring: 43 96% 56%;
 
     --radius: 0.5rem;
 
@@ -40,8 +40,8 @@
     --gym-black: 0 0% 13%;
     --gym-dark: 0 0% 96%;
     --gym-light: 0 0% 98%;
-    --gym-red: 0 100% 56%;
-    --gym-red-glow: 0 100% 56% / 0.3;
+    --gym-gold: 43 96% 56%;
+    --gym-gold-glow: 43 96% 56% / 0.3;
 
     /* Status colors */
     --status-active: 142 71% 45%;
