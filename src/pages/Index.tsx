@@ -76,10 +76,10 @@ const Index = () => {
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="font-heading text-xs tracking-[0.2em] text-primary">NSS FITNESS CENTRE</span>
           </motion.div>
-          <motion.h1 variants={fadeUp} custom={1} className="text-5xl md:text-8xl leading-[1] mb-2 text-white font-heading uppercase">
+          <motion.h1 variants={fadeUp} custom={1} className="text-4xl md:text-6xl leading-[1] mb-2 text-white font-heading uppercase">
             Be strong with a
           </motion.h1>
-          <motion.h1 variants={fadeUp} custom={2} className="text-5xl md:text-8xl leading-[1] mb-8 text-gradient-gold font-heading drop-shadow-xl uppercase">
+          <motion.h1 variants={fadeUp} custom={2} className="text-4xl md:text-6xl leading-[1] mb-8 text-gradient-gold font-heading drop-shadow-xl uppercase">
             professional
           </motion.h1>
           <motion.p variants={fadeUp} custom={3} className="text-lg md:text-xl text-white/70 mb-10 max-w-xl font-light leading-relaxed border-l-4 border-primary pl-6 py-2 bg-gradient-to-r from-primary/10 to-transparent">
@@ -143,7 +143,7 @@ const Index = () => {
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
             <span className="text-primary font-heading text-sm tracking-[0.2em] mb-3 block">HEAD COACH</span>
-            <h2 className="text-4xl md:text-6xl text-foreground mb-6 leading-[0.9]">MEET YOUR<br /><span className="text-primary">COACH</span></h2>
+            <h2 className="text-3xl md:text-5xl text-foreground mb-6 leading-[0.9]">MEET YOUR<br /><span className="text-primary">COACH</span></h2>
             <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
               With over 15 years of experience in competitive bodybuilding and personal training,
               our head coach has transformed hundreds of lives through discipline, science-backed training,
@@ -171,7 +171,7 @@ const Index = () => {
       <div className="container mx-auto px-4 relative z-10 text-center">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-20">
           <span className="text-primary font-heading text-lg tracking-[0.3em] uppercase block mb-4">— Why Choose Us</span>
-          <h2 className="text-5xl md:text-7xl text-white mb-6 font-heading font-bold uppercase tracking-wide">
+          <h2 className="text-4xl md:text-5xl text-white mb-6 font-heading font-bold uppercase tracking-wide">
             PUSH YOUR <span className="text-gradient-gold">LIMITS FORWARD</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
@@ -213,7 +213,7 @@ const Index = () => {
         <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div>
             <span className="text-primary font-heading text-lg tracking-[0.3em] uppercase block mb-4">— What We Do</span>
-            <h2 className="text-5xl md:text-7xl text-white font-heading font-bold uppercase tracking-wide">
+            <h2 className="text-4xl md:text-5xl text-white font-heading font-bold uppercase tracking-wide">
               SERVICE <span className="text-gradient-gold">WE OFFER</span>
             </h2>
           </div>
@@ -257,7 +257,7 @@ const Index = () => {
       
       <div className="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-16">
         <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex-1">
-          <h2 className="text-5xl md:text-7xl text-white mb-6 font-heading uppercase font-bold">
+          <h2 className="text-4xl md:text-5xl text-white mb-6 font-heading uppercase font-bold">
             CALCULATE YOUR <span className="text-gradient-gold">BMI</span>
           </h2>
           <p className="text-[#888] text-lg mb-10 max-w-xl leading-relaxed">
@@ -289,7 +289,7 @@ const Index = () => {
           {bmiResult !== null && (
             <div className="mt-8 pt-8 border-t border-white/10 flex justify-between items-center" id="bmi-result-container">
               <span className="text-white/50 uppercase font-heading tracking-widest text-sm">Your BMI:</span>
-              <span id="bmi-result-display" className="text-5xl text-primary font-heading">{bmiResult.toFixed(1)}</span>
+              <span id="bmi-result-display" className="text-4xl text-primary font-heading">{bmiResult.toFixed(1)}</span>
             </div>
           )}
         </motion.div>
@@ -301,7 +301,7 @@ const Index = () => {
       <div className="container mx-auto px-4">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-20">
           <span className="text-primary font-heading text-sm tracking-[0.2em] mb-3 block">PRICING</span>
-          <h2 className="text-4xl md:text-6xl text-foreground mb-4">MEMBERSHIP <span className="text-primary">PLANS</span></h2>
+          <h2 className="text-3xl md:text-5xl text-foreground mb-4">MEMBERSHIP <span className="text-primary">PLANS</span></h2>
           <p className="text-muted-foreground text-lg">Choose the plan that fits your goals.</p>
         </motion.div>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -324,7 +324,7 @@ const Index = () => {
                 </span>
               )}
               <h3 className={`text-sm tracking-[0.2em] mb-6 ${p.popular ? "text-primary" : "text-primary"}`}>{p.name}</h3>
-              <div className={`text-5xl font-heading mb-1 ${p.popular ? "text-background" : "text-foreground"}`}>
+              <div className={`text-4xl font-heading mb-1 ${p.popular ? "text-background" : "text-foreground"}`}>
                 LKR {p.price}
               </div>
               <div className={`text-sm mb-8 ${p.popular ? "text-background/50" : "text-muted-foreground"}`}>{p.period}</div>
@@ -357,7 +357,7 @@ const Index = () => {
       <div className="container mx-auto px-4 relative z-10">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-20">
           <span className="text-primary font-heading text-lg tracking-[0.3em] uppercase block mb-4">— Testimonial</span>
-          <h2 className="text-5xl md:text-7xl text-white mb-4 font-heading font-bold uppercase tracking-wide">OUR CLIENT <span className="text-gradient-gold">SAY</span></h2>
+          <h2 className="text-4xl md:text-5xl text-white mb-4 font-heading font-bold uppercase tracking-wide">OUR CLIENT <span className="text-gradient-gold">SAY</span></h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </motion.div>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -370,7 +370,7 @@ const Index = () => {
               transition={{ delay: i * 0.15 }}
               className="bg-[#111]/80 backdrop-blur p-12 border-t-4 border-primary relative"
             >
-              <div className="text-8xl font-heading text-primary/10 absolute top-4 right-8 select-none">"</div>
+              <div className="text-6xl font-heading text-primary/10 absolute top-4 right-8 select-none">"</div>
               <p className="text-[#888] mb-8 leading-relaxed text-lg italic">"{t.text}"</p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
@@ -399,7 +399,7 @@ const Index = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <img src={logo} alt="NSS Fitness Centre" className="h-20 w-auto mx-auto mb-8" />
-          <h2 className="text-5xl md:text-7xl text-background mb-6 font-heading leading-[0.9]">READY TO<br /><span className="text-gradient-gold drop-shadow-lg">TRANSFORM?</span></h2>
+          <h2 className="text-4xl md:text-5xl text-background mb-6 font-heading leading-[0.9]">READY TO<br /><span className="text-gradient-gold drop-shadow-lg">TRANSFORM?</span></h2>
           <p className="text-background/50 mb-10 max-w-md mx-auto text-lg">Join NSS Fitness Centre today and begin your transformation journey.</p>
           <Link to="/contact" className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-12 py-5 font-heading tracking-[0.15em] text-sm hover:bg-primary/90 transition-all group rounded-xl shadow-lg shadow-primary/30 gym-glow">
             JOIN NOW <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />

@@ -27,13 +27,15 @@ const plans = [
 ];
 
 const PlansPage = () => (
-  <div className="bg-muted min-h-screen">
+  <div className="bg-gym-black min-h-screen text-white">
     <Navbar />
-    <section className="pt-28 pb-24">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl text-foreground mb-4">MEMBERSHIP <span className="text-primary">PLANS</span></h1>
-          <p className="text-muted-foreground max-w-md mx-auto">Invest in yourself. Choose the plan that matches your ambition.</p>
+    <section className="pt-32 pb-28 relative">
+      <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-20">
+          <span className="text-primary font-heading text-lg tracking-[0.3em] uppercase block mb-4">— Pricing</span>
+          <h1 className="text-4xl md:text-5xl text-white mb-6 font-heading font-bold uppercase tracking-wide">MEMBERSHIP <span className="text-gradient-gold">PLANS</span></h1>
+          <p className="text-[#888] max-w-xl mx-auto text-lg leading-relaxed">Invest in yourself. Choose the plan that matches your ambition.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {plans.map((p, i) => (
@@ -42,34 +44,36 @@ const PlansPage = () => (
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.15, duration: 0.5 }}
-              className={`relative p-10 card-hover flex flex-col rounded-lg ${
-                p.popular ? "bg-primary" : "bg-background border border-border shadow-sm"
+              className={`relative p-12 card-hover flex flex-col ${
+                p.popular ? "bg-[#111] border-2 border-primary shadow-2xl shadow-primary/20 scale-105 z-10" : "bg-[#111] border border-white/10 shadow-xl opacity-90 hover:opacity-100"
               }`}
             >
               {p.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gym-black text-white text-xs font-heading tracking-widest px-4 py-1 rounded-full">
+                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-black text-sm font-heading tracking-widest uppercase px-6 py-1.5 shadow-lg shadow-primary/30 gym-glow">
                   MOST POPULAR
                 </span>
               )}
-              <h3 className={`text-sm tracking-widest mb-6 ${p.popular ? "text-white/70" : "text-primary"}`}>{p.name}</h3>
-              <div className={`mb-1 ${p.popular ? "text-white" : "text-foreground"}`}>
-                <span className="text-5xl font-heading">LKR {p.price}</span>
+              <h3 className={`text-xl font-heading tracking-widest uppercase mb-6 text-center ${p.popular ? "text-primary" : "text-white"}`}>{p.name}</h3>
+              <div className="mb-2 text-center text-white">
+                <span className="text-5xl font-heading drop-shadow-md">LKR {p.price}</span>
               </div>
-              <div className={`text-sm mb-8 ${p.popular ? "text-white/50" : "text-muted-foreground"}`}>per {p.period}</div>
-              <ul className="space-y-4 mb-10 flex-1">
+              <div className="text-center text-[#888] text-sm uppercase tracking-widest mb-10 pb-10 border-b border-white/10">PER {p.period}</div>
+              
+              <ul className="space-y-5 mb-12 flex-1">
                 {p.features.map((f) => (
-                  <li key={f} className={`text-sm flex items-start gap-3 ${p.popular ? "text-white/80" : "text-muted-foreground"}`}>
-                    <Check size={16} className="flex-shrink-0 mt-0.5" /> {f}
+                  <li key={f} className="text-[15px] flex items-start gap-4 text-[#aaa]">
+                    <Check size={20} className={`${p.popular ? "text-primary" : "text-white/40"} flex-shrink-0 mt-0.5`} /> {f}
                   </li>
                 ))}
               </ul>
+              
               <Link
                 to="/register"
-                className={`flex items-center justify-center gap-2 py-4 font-heading text-sm tracking-wider transition-colors group rounded-md ${
-                  p.popular ? "bg-white text-gym-black hover:bg-white/90" : "bg-primary text-primary-foreground hover:bg-primary/90"
+                className={`flex items-center justify-center gap-3 py-5 font-heading text-sm tracking-[0.2em] transition-all uppercase group ${
+                  p.popular ? "bg-primary text-black hover:bg-white gym-glow shadow-md" : "bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-black"
                 }`}
               >
-                GET STARTED <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                GET STARTED <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
           ))}
