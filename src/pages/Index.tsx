@@ -398,7 +398,9 @@ const Index = () => {
       </div>
       <div className="container mx-auto px-4 text-center relative z-10">
         <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <img src={logo} alt="NSS Fitness Centre" className="h-20 w-auto mx-auto mb-8" />
+          <div className="bg-white p-2 rounded-xl inline-block mb-8 shadow-xl">
+            <img src={logo} alt="NSS Fitness Centre" className="h-16 w-auto mx-auto" />
+          </div>
           <h2 className="text-4xl md:text-5xl text-background mb-6 font-heading leading-[0.9]">READY TO<br /><span className="text-gradient-gold drop-shadow-lg">TRANSFORM?</span></h2>
           <p className="text-background/50 mb-10 max-w-md mx-auto text-lg">Join NSS Fitness Centre today and begin your transformation journey.</p>
           <Link to="/contact" className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-12 py-5 font-heading tracking-[0.15em] text-sm hover:bg-primary/90 transition-all group rounded-xl shadow-lg shadow-primary/30 gym-glow">
