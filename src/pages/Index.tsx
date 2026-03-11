@@ -27,7 +27,7 @@ const plans = [
 const testimonials = [
   { name: "Kasun P.", text: "Lost 20kg in 6 months. The coaching here is world-class.", rating: 5 },
   { name: "Amara S.", text: "Best gym in Colombo. The equipment and atmosphere are unmatched.", rating: 5 },
-  { name: "Dinesh R.", text: "Transformed my physique completely. Highly recommend EliteFit!", rating: 5 },
+  { name: "Dinesh R.", text: "Transformed my physique completely. Highly recommend MSB Fitness!", rating: 5 },
 ];
 
 const Index = () => (
