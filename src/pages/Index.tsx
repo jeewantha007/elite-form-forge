@@ -27,7 +27,7 @@ const plans = [
 const testimonials = [
   { name: "Kasun P.", text: "Lost 20kg in 6 months. The coaching here is world-class.", rating: 5 },
   { name: "Amara S.", text: "Best gym in Colombo. The equipment and atmosphere are unmatched.", rating: 5 },
-  { name: "Dinesh R.", text: "Transformed my physique completely. Highly recommend MSB Fitness!", rating: 5 },
+  { name: "Dinesh R.", text: "Transformed my physique completely. Highly recommend NSS Fitness!", rating: 5 },
 ];
 
 const Index = () => (
@@ -53,7 +53,7 @@ const Index = () => (
             DIFFERENT
           </motion.h1>
           <motion.p variants={fadeUp} custom={3} className="text-lg text-white/60 mb-8 max-w-md font-light">
-            Train with Sri Lanka's Elite Fitness Coach at MSB Fitness Center.
+            Train with Sri Lanka's Elite Fitness Coach at NSS Fitness Center.
           </motion.p>
           <motion.div variants={fadeUp} custom={4} className="flex flex-wrap gap-4">
             <Link to="/register" className="bg-primary text-primary-foreground px-8 py-4 font-heading tracking-wider text-sm hover:bg-primary/90 transition-all flex items-center gap-2 group rounded-md">
@@ -102,7 +102,7 @@ const Index = () => (
     <section className="py-24 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl text-foreground mb-4">WHY <span className="text-primary">MSB FITNESS</span></h2>
+          <h2 className="text-4xl md:text-5xl text-foreground mb-4">WHY <span className="text-primary">NSS FITNESS</span></h2>
           <p className="text-muted-foreground max-w-md mx-auto">Everything you need to achieve your fitness goals under one roof.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -206,7 +206,7 @@ const Index = () => (
       </div>
       <div className="container mx-auto px-4 text-center relative z-10">
         <h2 className="text-4xl md:text-6xl text-white mb-4">READY TO <br />START?</h2>
-        <p className="text-white/70 mb-8 max-w-md mx-auto">Join MSB Fitness Center today and begin your transformation journey.</p>
+        <p className="text-white/70 mb-8 max-w-md mx-auto">Join NSS Fitness Center today and begin your transformation journey.</p>
         <Link to="/register" className="inline-flex items-center gap-2 bg-white text-gym-black px-10 py-4 font-heading tracking-wider text-sm hover:bg-white/90 transition-colors group rounded-md">
           JOIN NOW <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
         </Link>
