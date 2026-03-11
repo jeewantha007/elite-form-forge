@@ -65,7 +65,7 @@ export default {
           black: "hsl(var(--gym-black))",
           dark: "hsl(var(--gym-dark))",
           light: "hsl(var(--gym-light))",
-          red: "hsl(var(--gym-red))",
+          gold: "hsl(var(--gym-gold))",
         },
         status: {
           active: "hsl(var(--status-active))",

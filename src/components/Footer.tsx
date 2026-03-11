@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-gym-black text-white">
     <div className="container mx-auto px-4 py-16">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
-          <h3 className="text-2xl tracking-widest mb-4 text-white">
-            ELITE<span className="text-primary">FIT</span>
-          </h3>
+          <div className="flex items-center gap-3 mb-4">
+            <img src={logo} alt="MSB Fitness Center" className="h-12 w-auto brightness-200" />
+            <h3 className="text-2xl tracking-widest text-white">
+              MSB <span className="text-primary">FITNESS</span>
+            </h3>
+          </div>
           <p className="text-sm text-white/60 leading-relaxed">
             Sri Lanka's premier fitness destination. Train with the best, become the best.
           </p>
@@ -29,7 +33,7 @@ const Footer = () => (
           <h4 className="text-sm tracking-widest mb-4 text-white">CONTACT</h4>
           <div className="flex flex-col gap-3 text-sm text-white/60">
             <span className="flex items-center gap-2"><Phone size={14} /> +94 77 123 4567</span>
-            <span className="flex items-center gap-2"><Mail size={14} /> info@elitefit.lk</span>
+            <span className="flex items-center gap-2"><Mail size={14} /> info@msbfitness.lk</span>
             <span className="flex items-center gap-2"><MapPin size={14} /> Colombo 03, Sri Lanka</span>
           </div>
         </div>
@@ -44,7 +48,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-white/10 mt-12 pt-6 text-center text-xs text-white/40">
-        © 2025 EliteFit. All rights reserved.
+        © 2025 MSB Fitness Center. All rights reserved.
       </div>
     </div>
   </footer>

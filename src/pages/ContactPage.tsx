@@ -46,7 +46,7 @@ const ContactPage = () => (
             <div className="space-y-4">
               {[
                 { icon: Phone, label: "Phone / WhatsApp", value: "+94 77 123 4567" },
-                { icon: Mail, label: "Email", value: "info@elitefit.lk" },
+                { icon: Mail, label: "Email", value: "info@msbfitness.lk" },
                 { icon: MapPin, label: "Location", value: "123 Fitness Street, Colombo 03, Sri Lanka" },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-4 p-5 bg-background border border-border rounded-lg">

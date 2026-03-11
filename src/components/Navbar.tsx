@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -17,8 +18,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <Link to="/" className="font-heading text-2xl tracking-widest text-foreground">
-          ELITE<span className="text-primary">FIT</span>
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="MSB Fitness Center" className="h-10 w-auto" />
+          <span className="font-heading text-xl tracking-widest text-foreground hidden sm:inline">MSB <span className="text-primary">FITNESS</span></span>
         </Link>
 
         {/* Desktop */}
