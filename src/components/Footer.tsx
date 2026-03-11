@@ -33,7 +33,7 @@ const Footer = () => (
           <h4 className="text-sm tracking-widest mb-4 text-white">CONTACT</h4>
           <div className="flex flex-col gap-3 text-sm text-white/60">
             <span className="flex items-center gap-2"><Phone size={14} /> +94 77 123 4567</span>
-            <span className="flex items-center gap-2"><Mail size={14} /> info@msbfitness.lk</span>
+            <span className="flex items-center gap-2"><Mail size={14} /> info@nssfitness.lk</span>
             <span className="flex items-center gap-2"><MapPin size={14} /> Colombo 03, Sri Lanka</span>
           </div>
         </div>
