@@ -48,7 +48,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-white/10 mt-12 pt-6 text-center text-xs text-white/40">
-        © 2025 EliteFit. All rights reserved.
+        © 2025 MSB Fitness Center. All rights reserved.
       </div>
     </div>
   </footer>
