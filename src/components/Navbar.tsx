@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto flex items-center justify-between h-20 px-4">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="NSS Fitness Centre" className="h-14 w-auto" />
+          <img src={logo} alt="NSS Fitness Centre" className="h-20 w-auto -mt-2" />
           <span className="font-heading text-xl tracking-widest text-foreground hidden sm:inline">NSS <span className="text-primary">FITNESS CENTRE</span></span>
         </Link>
 

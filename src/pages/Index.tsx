@@ -4,7 +4,7 @@ import { Dumbbell, Users, Trophy, Star, ChevronRight, Zap, Shield, Clock, ArrowR
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-gym.jpg";
-import coachImage from "@/assets/coach-portrait.jpg";
+import coachImage from "@/assets/coach.jpeg";
 import logo from "@/assets/logo.png";
 
 const fadeUp = {
@@ -276,7 +276,7 @@ const Index = () => (
       </div>
       <div className="container mx-auto px-4 text-center relative z-10">
         <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <img src={logo} alt="NSS Fitness Centre" className="h-20 w-auto mx-auto mb-8 brightness-200 opacity-30" />
+          <img src={logo} alt="NSS Fitness Centre" className="h-20 w-auto mx-auto mb-8" />
           <h2 className="text-5xl md:text-7xl text-background mb-6 font-heading leading-[0.9]">READY TO<br /><span className="text-primary">TRANSFORM?</span></h2>
           <p className="text-background/50 mb-10 max-w-md mx-auto text-lg">Join NSS Fitness Centre today and begin your transformation journey.</p>
           <Link to="/register" className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-12 py-5 font-heading tracking-[0.15em] text-sm hover:bg-primary/90 transition-all group rounded-xl shadow-lg shadow-primary/30">

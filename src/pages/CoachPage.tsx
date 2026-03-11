@@ -3,7 +3,7 @@ import { Trophy, Award, Camera, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import coachImage from "@/assets/coach-portrait.jpg";
+import coachImage from "@/assets/coach.jpeg";
 
 const achievements = [
   { title: "National Bodybuilding Champion", year: "2020", desc: "1st Place - Men's Physique" },
@@ -32,10 +32,10 @@ const CoachPage = () => (
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
             <h4 className="text-primary font-heading text-sm tracking-widest mb-2">HEAD COACH</h4>
-            <h1 className="text-5xl md:text-6xl text-foreground mb-2">RAVINDU</h1>
-            <h1 className="text-5xl md:text-6xl text-primary mb-6">FERNANDO</h1>
+            <h1 className="text-5xl md:text-6xl text-foreground mb-2">MOHAMMED</h1>
+            <h1 className="text-5xl md:text-6xl text-primary mb-6">ARAFATH</h1>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              With over 15 years in competitive bodybuilding and personal training, Coach Ravindu has dedicated
+              With over 15 years in competitive bodybuilding and personal training, Coach Mohammed has dedicated
               his life to transforming bodies and minds. His science-backed approach combined with raw discipline
               has produced champions across Sri Lanka and beyond.
             </p>
