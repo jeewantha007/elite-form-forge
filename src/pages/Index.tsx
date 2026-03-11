@@ -53,7 +53,7 @@ const Index = () => (
             DIFFERENT
           </motion.h1>
           <motion.p variants={fadeUp} custom={3} className="text-lg text-white/60 mb-8 max-w-md font-light">
-            Train with Sri Lanka's Elite Fitness Coach. Premium streetwear for those who refuse to blend in.
+            Train with Sri Lanka's Elite Fitness Coach at MSB Fitness Center.
           </motion.p>
           <motion.div variants={fadeUp} custom={4} className="flex flex-wrap gap-4">
             <Link to="/register" className="bg-primary text-primary-foreground px-8 py-4 font-heading tracking-wider text-sm hover:bg-primary/90 transition-all flex items-center gap-2 group rounded-md">
