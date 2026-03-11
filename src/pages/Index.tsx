@@ -102,7 +102,7 @@ const Index = () => (
     <section className="py-24 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl text-foreground mb-4">WHY <span className="text-primary">MSB FITNESS</span></h2>
+          <h2 className="text-4xl md:text-5xl text-foreground mb-4">WHY <span className="text-primary">NSS FITNESS</span></h2>
           <p className="text-muted-foreground max-w-md mx-auto">Everything you need to achieve your fitness goals under one roof.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
