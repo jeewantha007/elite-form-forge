@@ -24,7 +24,7 @@ const GalleryPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl text-foreground mb-4">GALLERY</h1>
-            <p className="text-muted-foreground">Inside NSS Fitness Center — where champions are made.</p>
+            <p className="text-muted-foreground">Inside NSS Fitness Centre — where champions are made.</p>
           </div>
 
           <div className="flex justify-center gap-3 mb-12 flex-wrap">

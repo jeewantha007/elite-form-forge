@@ -10,7 +10,7 @@ const RegisterPage = () => (
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-lg">
         <div className="bg-background border border-border rounded-lg p-10 shadow-sm">
           <div className="text-center mb-8">
-            <h1 className="text-3xl text-foreground mb-2">JOIN <span className="text-primary">NSS FITNESS</span></h1>
+            <h1 className="text-3xl text-foreground mb-2">JOIN <span className="text-primary">NSS FITNESS CENTRE</span></h1>
             <p className="text-sm text-muted-foreground">Start your transformation today</p>
           </div>
 
