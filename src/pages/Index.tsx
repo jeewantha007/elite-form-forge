@@ -206,7 +206,7 @@ const Index = () => (
       </div>
       <div className="container mx-auto px-4 text-center relative z-10">
         <h2 className="text-4xl md:text-6xl text-white mb-4">READY TO <br />START?</h2>
-        <p className="text-white/70 mb-8 max-w-md mx-auto">Join NSS Fitness Center today and begin your transformation journey.</p>
+        <p className="text-white/70 mb-8 max-w-md mx-auto">Join NSS Fitness Centre today and begin your transformation journey.</p>
         <Link to="/register" className="inline-flex items-center gap-2 bg-white text-gym-black px-10 py-4 font-heading tracking-wider text-sm hover:bg-white/90 transition-colors group rounded-md">
           JOIN NOW <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
         </Link>
