@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-gym-black text-white">
     <div className="container mx-auto px-4 py-16">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
-          <h3 className="text-2xl tracking-widest mb-4 text-white">
-            ELITE<span className="text-primary">FIT</span>
-          </h3>
+          <div className="flex items-center gap-3 mb-4">
+            <img src={logo} alt="MSB Fitness Center" className="h-12 w-auto brightness-200" />
+            <h3 className="text-2xl tracking-widest text-white">
+              MSB <span className="text-primary">FITNESS</span>
+            </h3>
+          </div>
           <p className="text-sm text-white/60 leading-relaxed">
             Sri Lanka's premier fitness destination. Train with the best, become the best.
           </p>
