@@ -25,32 +25,33 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex flex-col">
       {/* Top Bar - Hidden on mobile */}
-      <div className={`hidden md:block w-full bg-gym-black border-b border-white/5 transition-all duration-300 ${scrolled ? 'h-0 opacity-0 overflow-hidden' : 'h-10 opacity-100'}`}>
-        <div className="container mx-auto px-4 h-full flex items-center justify-between text-xs text-[#888] font-heading tracking-widest uppercase">
+      <div className={`hidden md:block w-full bg-primary border-b border-black/10 transition-all duration-300 ${scrolled ? 'h-0 opacity-0 overflow-hidden' : 'h-10 opacity-100'}`}>
+        <div className="container mx-auto px-4 h-full flex items-center justify-between text-xs text-black font-heading tracking-widest uppercase">
           <div className="flex items-center gap-6">
-            <a href="tel:+94771234567" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Phone size={12} className="text-primary" /> +94 77 123 4567
+            <a href="tel:+94771234567" className="flex items-center gap-2 hover:bg-black/10 px-2 py-1 rounded transition-colors">
+              <Phone size={12} className="text-black" /> +94 77 123 4567
             </a>
-            <a href="mailto:info@nssfitness.lk" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Mail size={12} className="text-primary" /> info@nssfitness.lk
+            <a href="mailto:info@nssfitness.lk" className="flex items-center gap-2 hover:bg-black/10 px-2 py-1 rounded transition-colors">
+              <Mail size={12} className="text-black" /> info@nssfitness.lk
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <span className="opacity-50">Follow Us:</span>
-            <a href="#" className="hover:text-primary transition-colors"><Instagram size={14} /></a>
-            <a href="#" className="hover:text-primary transition-colors"><Facebook size={14} /></a>
+            <span className="opacity-70">Follow Us:</span>
+            <a href="#" className="hover:bg-black/10 p-1 rounded transition-colors"><Instagram size={14} /></a>
+            <a href="#" className="hover:bg-black/10 p-1 rounded transition-colors"><Facebook size={14} /></a>
           </div>
         </div>
       </div>
 
       {/* Main Navbar */}
-      <nav className={`w-full transition-all duration-300 ${scrolled ? 'bg-[#111]/95 backdrop-blur-md shadow-lg border-b border-white/5 py-0' : 'bg-[#111]/80 backdrop-blur-sm border-b border-white/5 py-1'}`}>
+      <nav className={`w-full transition-all duration-300 ${scrolled ? 'bg-[#111]/95 backdrop-blur-md shadow-lg border-b border-white/5 py-0' : 'bg-[#111]/90 backdrop-blur-sm border-b border-white/5 py-1'}`}>
         <div className="container mx-auto flex items-center justify-between h-20 px-4">
           <Link to="/" className="flex items-center gap-4 group">
-            <div className="bg-white p-1.5 rounded-full drop-shadow-lg group-hover:scale-105 transition-transform flex items-center justify-center">
-              <img src={logo} alt="NSS Fitness Centre" className="h-12 w-auto" />
+            <div className="relative p-2 rounded-full bg-white shadow-[0_0_15px_rgba(255,255,255,0.3)] border border-white/50 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.6)] group-hover:scale-105 transition-all duration-300 flex items-center justify-center overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-gray-200"></div>
+              <img src={logo} alt="NSS Fitness Centre" className="relative h-12 w-auto object-contain z-10" />
             </div>
-            <span className="font-heading text-xl tracking-[0.2em] text-white hidden sm:inline uppercase">NSS <span className="text-primary">FITNESS CENTRE</span></span>
+            <span className="font-heading text-xl tracking-[0.2em] text-white hidden sm:inline uppercase drop-shadow-md">NSS <span className="text-primary">FITNESS CENTRE</span></span>
           </Link>
 
         {/* Desktop */}
@@ -81,7 +82,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        <div className={`lg:hidden bg-gym-black border-t border-white/10 overflow-hidden transition-all duration-300 ${open ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0 border-transparent'}`}>
+        <div className={`lg:hidden bg-gym-black border-t border-white/10 overflow-hidden transition-all duration-300 ${open ? 'max-h-[400px] opacity-100 shadow-xl' : 'max-h-0 opacity-0 border-transparent'}`}>
           <div className="px-4 py-4 flex flex-col gap-2">
           {navLinks.map((l) => (
             <Link
@@ -98,7 +99,7 @@ const Navbar = () => {
           <Link to="/contact" className="mt-4 block w-full text-center bg-primary text-black px-4 py-3 font-heading text-sm tracking-[0.2em] uppercase hover:bg-white transition-all gym-glow">
             JOIN NOW
           </Link>
-          <div className="mt-6 pt-6 border-t border-white/10 flex justify-center gap-6 pb-2">
+          <div className="mt-6 pt-6 border-t border-white/5 flex justify-center gap-6 pb-2">
             <a href="#" className="text-[#888] hover:text-primary transition-colors"><Instagram size={20} /></a>
             <a href="#" className="text-[#888] hover:text-primary transition-colors"><Facebook size={20} /></a>
           </div>
