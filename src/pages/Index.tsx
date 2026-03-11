@@ -76,10 +76,10 @@ const Index = () => {
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="font-heading text-xs tracking-[0.2em] text-primary">NSS FITNESS CENTRE</span>
           </motion.div>
-          <motion.h1 variants={fadeUp} custom={1} className="text-4xl md:text-6xl leading-[1] mb-2 text-white font-heading uppercase">
+          <motion.h1 variants={fadeUp} custom={1} className="text-3xl md:text-5xl leading-[1] mb-2 text-white font-heading uppercase">
             Be strong with a
           </motion.h1>
-          <motion.h1 variants={fadeUp} custom={2} className="text-4xl md:text-6xl leading-[1] mb-8 text-gradient-gold font-heading drop-shadow-xl uppercase">
+          <motion.h1 variants={fadeUp} custom={2} className="text-3xl md:text-5xl leading-[1] mb-8 text-gradient-gold font-heading drop-shadow-xl uppercase">
             professional
           </motion.h1>
           <motion.p variants={fadeUp} custom={3} className="text-lg md:text-xl text-white/70 mb-10 max-w-xl font-light leading-relaxed border-l-4 border-primary pl-6 py-2 bg-gradient-to-r from-primary/10 to-transparent">
@@ -149,11 +149,11 @@ const Index = () => {
               our head coach has transformed hundreds of lives through discipline, science-backed training,
               and relentless motivation.
             </p>
-            <div className="grid grid-cols-3 gap-4 mb-10">
+            <div className="grid grid-cols-3 gap-2 md:gap-4 mb-10">
               {[{ val: "15+", label: "Years Exp" }, { val: "500+", label: "Clients" }, { val: "50+", label: "Trophies" }].map((s) => (
-                <div key={s.label} className="text-center p-5 bg-muted rounded-xl border border-border">
-                  <div className="text-3xl font-heading text-primary">{s.val}</div>
-                  <div className="text-xs text-muted-foreground tracking-wider mt-1">{s.label}</div>
+                <div key={s.label} className="text-center p-3 md:p-5 bg-muted rounded-xl border border-border">
+                  <div className="text-2xl md:text-3xl font-heading text-primary">{s.val}</div>
+                  <div className="text-[10px] md:text-xs text-muted-foreground tracking-wider mt-1">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -264,7 +264,7 @@ const Index = () => {
             Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. Check your fitness status below.
           </p>
           
-          <div className="grid grid-cols-2 gap-4 max-w-xl mb-10 text-white font-heading text-lg">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mb-10 text-white font-heading text-sm sm:text-base md:text-lg">
             <div className="border border-white/10 p-4 border-l-4 border-l-blue-500 bg-white/5">Underweight: &lt; 18.5</div>
             <div className="border border-white/10 p-4 border-l-4 border-l-green-500 bg-white/5">Healthy: 18.5 - 24.9</div>
             <div className="border border-white/10 p-4 border-l-4 border-l-yellow-500 bg-white/5">Overweight: 25.0 - 29.9</div>
@@ -398,8 +398,9 @@ const Index = () => {
       </div>
       <div className="container mx-auto px-4 text-center relative z-10">
         <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <div className="bg-white p-2 rounded-full inline-flex items-center justify-center mb-8 shadow-xl">
-            <img src={logo} alt="NSS Fitness Centre" className="h-16 w-auto mx-auto" />
+          <div className="relative p-3 rounded-full bg-white shadow-[0_0_30px_rgba(255,255,255,0.4)] border border-white/50 mb-8 inline-flex items-center justify-center overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-gray-200"></div>
+            <img src={logo} alt="NSS Fitness Centre" className="relative h-16 w-auto mx-auto z-10" />
           </div>
           <h2 className="text-4xl md:text-5xl text-background mb-6 font-heading leading-[0.9]">READY TO<br /><span className="text-gradient-gold drop-shadow-lg">TRANSFORM?</span></h2>
           <p className="text-background/50 mb-10 max-w-md mx-auto text-lg">Join NSS Fitness Centre today and begin your transformation journey.</p>

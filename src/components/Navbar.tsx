@@ -24,8 +24,8 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex flex-col">
-      {/* Top Bar - Hidden on mobile */}
-      <div className={`hidden md:block w-full bg-primary border-b border-black/10 transition-all duration-300 ${scrolled ? 'h-0 opacity-0 overflow-hidden' : 'h-10 opacity-100'}`}>
+      {/* Top Bar - Hidden entirely now based on feedback */}
+      <div className="hidden">
         <div className="container mx-auto px-4 h-full flex items-center justify-between text-xs text-black font-heading tracking-widest uppercase">
           <div className="flex items-center gap-6">
             <a href="tel:+94771234567" className="flex items-center gap-2 hover:bg-black/10 px-2 py-1 rounded transition-colors">

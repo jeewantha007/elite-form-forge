@@ -9,10 +9,11 @@ const Footer = () => (
         {/* Brand Info */}
         <div className="space-y-6">
           <Link to="/" className="flex items-center gap-4 group inline-flex mb-2">
-            <div className="bg-white p-1.5 rounded-full group-hover:scale-105 transition-transform flex items-center justify-center">
-              <img src={logo} alt="NSS Fitness Centre" className="h-12 w-auto" />
+            <div className="relative p-2 rounded-full bg-white shadow-[0_0_15px_rgba(255,255,255,0.3)] border border-white/50 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.6)] group-hover:scale-105 transition-all duration-300 flex items-center justify-center overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-gray-200"></div>
+              <img src={logo} alt="NSS Fitness Centre" className="relative h-12 w-auto object-contain z-10" />
             </div>
-            <h3 className="text-xl font-heading tracking-widest text-white uppercase">
+            <h3 className="text-xl font-heading tracking-widest text-white uppercase drop-shadow-md">
               NSS <span className="text-primary">FITNESS CENTRE</span>
             </h3>
           </Link>
