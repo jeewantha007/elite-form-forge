@@ -56,7 +56,6 @@ const Footer = () => (
               </div>
               <span className="mt-1">071 301 8615</span>
             </a>
-            </a>
             <a href="mailto:info@nssfitness.lk" className="flex items-start gap-4 hover:text-primary transition-colors group">
               <div className="w-8 h-8 rounded-full bg-[#1a1a1a] flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20">
                 <Mail size={14} className="text-primary" />
