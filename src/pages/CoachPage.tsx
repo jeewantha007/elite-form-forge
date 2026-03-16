@@ -5,18 +5,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import coachImage from "@/assets/coach.jpeg";
 
-const achievements = [
-  { title: "National Bodybuilding Champion", year: "2020", desc: "1st Place - Men's Physique" },
-  { title: "South Asian Games", year: "2019", desc: "Gold Medal - Powerlifting" },
-  { title: "Best Trainer Award", year: "2021", desc: "Sri Lanka Fitness Federation" },
-  { title: "IFBB Pro Card", year: "2022", desc: "International Federation" },
+const positions = [
+  { title: "Vice President", org: "Master Body Building", year: "2024 - Present" },
+  { title: "President", org: "Sri Lanka Strengthlifting Federation", year: "2024 - Present" },
+  { title: "Executive Member", org: "World Strength Lifting Federation", year: "2023 - Present" },
+  { title: "Vice President & Executive Committee Member", org: "Gym Association of Sri Lanka", year: "Ongoing" },
 ];
 
-const certifications = [
-  "NASM Certified Personal Trainer",
-  "ACE Fitness Nutrition Specialist",
-  "CrossFit Level 2 Trainer",
-  "Sports Rehabilitation Specialist",
+const career = [
+  { role: "Founder, Director & CEO", org: "NSS Fitness Centre", period: "2012 - Present" },
+  { role: "Director & Senior Lecturer", org: "BFSS Institute", period: "2020 - Present" },
 ];
 
 const CoachPage = () => (
