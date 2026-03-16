@@ -40,7 +40,7 @@ const CoachPage = () => (
               A true pioneer in Sri Lankan fitness.
             </p>
             <div className="grid grid-cols-3 gap-6">
-              {[{ val: "15+", label: "Years Exp" }, { val: "500+", label: "Transformations" }, { val: "50+", label: "Awards" }].map((s) => (
+              {[{ val: "40+", label: "Years Exp" }, { val: "1000+", label: "Transformations" }, { val: "50+", label: "Awards" }].map((s) => (
                 <div key={s.label} className="bg-[#111] p-6 text-center border-t-2 border-primary/30 hover:border-primary transition-colors card-hover">
                   <div className="text-3xl font-heading text-white mb-1">{s.val}</div>
                   <div className="text-xs text-primary font-heading tracking-widest uppercase">{s.label}</div>
