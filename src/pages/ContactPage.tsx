@@ -74,10 +74,10 @@ const ContactPage = () => (
             </div>
 
             <div className="flex gap-4">
-              <a href="tel:+94771234567" className="flex-1 flex items-center justify-center gap-3 border-2 border-[#333] text-white py-4 font-heading text-sm tracking-[0.2em] uppercase hover:border-white transition-colors">
+              <a href="tel:+94713018615" className="flex-1 flex items-center justify-center gap-3 border-2 border-[#333] text-white py-4 font-heading text-sm tracking-[0.2em] uppercase hover:border-white transition-colors">
                 <Phone size={16} /> CALL NOW
               </a>
-              <a href="https://wa.me/94771234567" className="flex-1 flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 font-heading text-sm tracking-[0.2em] uppercase hover:bg-[#1DA851] transition-colors shadow-lg shadow-[#25D366]/20">
+              <a href="https://wa.me/94713018615" className="flex-1 flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 font-heading text-sm tracking-[0.2em] uppercase hover:bg-[#1DA851] transition-colors shadow-lg shadow-[#25D366]/20">
                 WHATSAPP
               </a>
             </div>
