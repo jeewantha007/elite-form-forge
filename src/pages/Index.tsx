@@ -40,7 +40,7 @@ const testimonials = [
 
 const stats = [
   { value: "1000+", label: "Active Members" },
-  { value: "15+", label: "Years Experience" },
+  { value: "40+", label: "Years Experience" },
   { value: "50+", label: "Trophies Won" },
   { value: "98%", label: "Success Rate" },
 ];
