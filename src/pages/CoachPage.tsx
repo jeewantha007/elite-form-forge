@@ -34,9 +34,10 @@ const CoachPage = () => (
             <h1 className="text-4xl md:text-5xl text-white mb-2 font-heading font-bold uppercase tracking-wide">MOHAMMED</h1>
             <h1 className="text-4xl md:text-5xl text-gradient-gold mb-8 font-heading font-bold uppercase tracking-wide drop-shadow-lg">ARAFATH</h1>
             <p className="text-[#888] leading-relaxed mb-10 text-lg border-l-4 border-primary pl-6 py-2 bg-gradient-to-r from-primary/5 to-transparent">
-              With over 15 years in competitive bodybuilding and personal training, Coach Mohammed has dedicated
-              his life to transforming bodies and minds. His science-backed approach combined with raw discipline
-              has produced champions across Sri Lanka and beyond.
+              With over 40 years of experience in fitness, bodybuilding, and strength training, Coach Mohammed Arafath
+              is the Founder, Director & CEO of NSS Fitness Centre. He serves as Vice President at Master Body Building,
+              President of the Sri Lanka Strengthlifting Federation, and Executive Member of the World Strength Lifting Federation.
+              A true pioneer in Sri Lankan fitness.
             </p>
             <div className="grid grid-cols-3 gap-6">
               {[{ val: "15+", label: "Years Exp" }, { val: "500+", label: "Transformations" }, { val: "50+", label: "Awards" }].map((s) => (
