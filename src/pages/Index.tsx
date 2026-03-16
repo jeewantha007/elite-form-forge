@@ -138,19 +138,19 @@ const Index = () => {
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl blur-2xl" />
             <img src={coachImage} alt="Head Coach" className="relative w-full max-w-md mx-auto aspect-[3/4] object-cover rounded-2xl shadow-2xl" />
             <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-heading tracking-wider text-sm shadow-lg">
-              15+ YEARS EXPERIENCE
+              40+ YEARS EXPERIENCE
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
             <span className="text-primary font-heading text-sm tracking-[0.2em] mb-3 block">HEAD COACH</span>
-            <h2 className="text-3xl md:text-5xl text-foreground mb-6 leading-[0.9]">MEET YOUR<br /><span className="text-primary">COACH</span></h2>
+            <h2 className="text-3xl md:text-5xl text-foreground mb-6 leading-[0.9]">MOHAMMED<br /><span className="text-primary">ARAFATH</span></h2>
             <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
-              With over 15 years of experience in competitive bodybuilding and personal training,
-              our head coach has transformed hundreds of lives through discipline, science-backed training,
-              and relentless motivation.
+              Founder, Director & CEO of NSS Fitness Centre with over 40 years of experience.
+              Vice President at Master Body Building, President of the Sri Lanka Strengthlifting Federation,
+              and Executive Member of the World Strength Lifting Federation.
             </p>
             <div className="grid grid-cols-3 gap-2 md:gap-4 mb-10">
-              {[{ val: "15+", label: "Years Exp" }, { val: "500+", label: "Clients" }, { val: "50+", label: "Trophies" }].map((s) => (
+              {[{ val: "40+", label: "Years Exp" }, { val: "1000+", label: "Clients" }, { val: "50+", label: "Trophies" }].map((s) => (
                 <div key={s.label} className="text-center p-3 md:p-5 bg-muted rounded-xl border border-border">
                   <div className="text-2xl md:text-3xl font-heading text-primary">{s.val}</div>
                   <div className="text-[10px] md:text-xs text-muted-foreground tracking-wider mt-1">{s.label}</div>
