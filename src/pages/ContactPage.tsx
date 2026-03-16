@@ -48,9 +48,9 @@ const ContactPage = () => (
           <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="space-y-8 flex flex-col justify-between">
             <div className="space-y-4">
               {[
-                { icon: Phone, label: "Phone / WhatsApp", value: "+94 77 123 4567" },
+                { icon: Phone, label: "Phone / WhatsApp", value: "071 301 8615" },
                 { icon: Mail, label: "Email", value: "info@nssfitness.lk" },
-                { icon: MapPin, label: "Location", value: "123 Fitness Street, Colombo 03, Sri Lanka" },
+                { icon: MapPin, label: "Location", value: "WXM3+J5G, Welipara Rd, Welivita" },
               ].map((c) => (
                 <div key={c.label} className="flex items-center gap-6 p-6 bg-[#111] border border-white/5 hover:border-primary/50 transition-all group">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
@@ -74,10 +74,10 @@ const ContactPage = () => (
             </div>
 
             <div className="flex gap-4">
-              <a href="tel:+94771234567" className="flex-1 flex items-center justify-center gap-3 border-2 border-[#333] text-white py-4 font-heading text-sm tracking-[0.2em] uppercase hover:border-white transition-colors">
+              <a href="tel:+94713018615" className="flex-1 flex items-center justify-center gap-3 border-2 border-[#333] text-white py-4 font-heading text-sm tracking-[0.2em] uppercase hover:border-white transition-colors">
                 <Phone size={16} /> CALL NOW
               </a>
-              <a href="https://wa.me/94771234567" className="flex-1 flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 font-heading text-sm tracking-[0.2em] uppercase hover:bg-[#1DA851] transition-colors shadow-lg shadow-[#25D366]/20">
+              <a href="https://wa.me/94713018615" className="flex-1 flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 font-heading text-sm tracking-[0.2em] uppercase hover:bg-[#1DA851] transition-colors shadow-lg shadow-[#25D366]/20">
                 WHATSAPP
               </a>
             </div>

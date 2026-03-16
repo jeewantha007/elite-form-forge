@@ -50,11 +50,11 @@ const Footer = () => (
             <span className="w-4 h-1 bg-primary"></span> Contact Us
           </h4>
           <div className="flex flex-col gap-5 text-sm">
-            <a href="tel:+94771234567" className="flex items-start gap-4 hover:text-primary transition-colors group">
+            <a href="tel:+94713018615" className="flex items-start gap-4 hover:text-primary transition-colors group">
               <div className="w-8 h-8 rounded-full bg-[#1a1a1a] flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20">
                 <Phone size={14} className="text-primary" />
               </div>
-              <span className="mt-1">+94 77 123 4567</span>
+              <span className="mt-1">071 301 8615</span>
             </a>
             <a href="mailto:info@nssfitness.lk" className="flex items-start gap-4 hover:text-primary transition-colors group">
               <div className="w-8 h-8 rounded-full bg-[#1a1a1a] flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20">
@@ -66,7 +66,7 @@ const Footer = () => (
               <div className="w-8 h-8 rounded-full bg-[#1a1a1a] flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20">
                 <MapPin size={14} className="text-primary" />
               </div>
-              <span className="mt-1 group-hover:text-white transition-colors">123 Fitness Street,<br />Colombo 03, Sri Lanka</span>
+              <span className="mt-1 group-hover:text-white transition-colors">Welipara Rd, Welivita,<br />Sri Lanka</span>
             </div>
           </div>
         </div>

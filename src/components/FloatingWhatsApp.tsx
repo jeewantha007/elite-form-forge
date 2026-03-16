@@ -10,7 +10,7 @@ const FloatingWhatsApp = () => {
       
       {/* Main Button */}
       <motion.a
-        href="https://wa.me/94771234567" // Placeholder number matching contact info
+        href="https://wa.me/94713018615"
         target="_blank"
         rel="noopener noreferrer"
         className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl hover:bg-[#20ba59] transition-colors"
