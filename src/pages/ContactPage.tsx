@@ -48,9 +48,9 @@ const ContactPage = () => (
           <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="space-y-8 flex flex-col justify-between">
             <div className="space-y-4">
               {[
-                { icon: Phone, label: "Phone / WhatsApp", value: "+94 77 123 4567" },
+                { icon: Phone, label: "Phone / WhatsApp", value: "071 301 8615" },
                 { icon: Mail, label: "Email", value: "info@nssfitness.lk" },
-                { icon: MapPin, label: "Location", value: "123 Fitness Street, Colombo 03, Sri Lanka" },
+                { icon: MapPin, label: "Location", value: "WXM3+J5G, Welipara Rd, Welivita" },
               ].map((c) => (
                 <div key={c.label} className="flex items-center gap-6 p-6 bg-[#111] border border-white/5 hover:border-primary/50 transition-all group">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
